@@ -28,7 +28,7 @@ public class App
     {
         System.out.println( "Hello World!" );
 
-        Connection conn =DriverManager.getConnection("com.mysql.jdbc.Driver");
+        Connection conn =DriverManager.getConnection("jdbc:mysql://localhost:3306/dxc",null, null );
         Statement Statement= conn.createStatement();
             Statement.execute(SQL_CREATE);
             
